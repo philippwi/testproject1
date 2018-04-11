@@ -9,6 +9,7 @@
       xmlns:c="http://java.sun.com/jsp/jstl/core">
 <h:head>
     <title>test</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </h:head>
 
 <h:body>
@@ -22,6 +23,13 @@
         <h:commandButton action="#{calculatorBean.add}" value="Add"></h:commandButton>
         <br/><br/>
         <h:outputLabel>Result: #{calculatorBean.result}</h:outputLabel>
+        <br/>
+        <h:outputLabel for="pText">Write text:</h:outputLabel>
+        <h:inputText id="pText" value="#{writerBean.paramText}"></h:inputText>
+        <br/>
+        <br/>
+        <h:outputLabel>Result: #{writerBean.paramText}</h:outputLabel>
+        <br/>
     </h:form>
 </h:body>
 </html>
