@@ -9,8 +9,8 @@ public class LogonTest {
 
   public static void main(String[] args) {
     UserEntity user = new UserEntity();
-    user.setName("Dumm Kopf");
-    user.setLogin("dummkopf");
+    user.setName("Dummer Kopf");
+    user.setLogin("dummkopfer");
     user.setPassword("test");
 
    EntityManagerFactory emf = Persistence.createEntityManagerFactory("dataPU");
