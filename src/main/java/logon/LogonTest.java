@@ -1,19 +1,16 @@
 package logon;
 
-import java.util.List;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.Query;
 
 public class LogonTest {
 
 
   public static void main(String[] args) {
     UserEntity user = new UserEntity();
-    user.setName("Teste Mich");
-    user.setLogin("testuser");
+    user.setName("Dumm Kopf");
+    user.setLogin("dummkopf");
     user.setPassword("test");
 
    EntityManagerFactory emf = Persistence.createEntityManagerFactory("dataPU");
