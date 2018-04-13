@@ -24,11 +24,14 @@
         <br/><br/>
         <h:outputLabel>Result: #{calculatorBean.result}</h:outputLabel>
         <br/>
+    </h:form>
+    <h:form>
         <h:outputLabel for="pText">Write text:</h:outputLabel>
         <h:inputText id="pText" value="#{writerBean.paramText}"></h:inputText>
         <br/>
+        <h:commandButton action="#{writerBean.save}" value="Add"></h:commandButton>
         <br/>
-        <h:outputLabel>Result: #{writerBean.paramText}</h:outputLabel>
+        <h:outputLabel>Written in db: #{writerBean.paramText}</h:outputLabel>
         <br/>
     </h:form>
 </h:body>
