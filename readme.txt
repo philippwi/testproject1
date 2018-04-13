@@ -1,5 +1,7 @@
 # Test Db
 
+Create Database schema called "data". Add a user called "testuser" with the password "test".
+
 ## Configuration
 
 Start jboss-cli and enter the following commands:
@@ -12,6 +14,7 @@ Start jboss-cli and enter the following commands:
   driver-class-name=com.mysql.jdbc.Driver, \
   xa-datasource-class=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource)
 ```
+
 
 ### Data Source
 ```
